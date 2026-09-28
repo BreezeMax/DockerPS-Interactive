@@ -17,7 +17,6 @@ Instead of wrestling with messy terminal columns or memorizing container IDs, **
 * **Single-Keystroke Productivity** — Drop into interactive shells, stream live logs, or inspect container states with a single keypress—no retyping required.
 
 Whether you're debugging local microservices or managing Docker Compose stacks, it's the fast, keyboard-first `docker ps` alternative built to keep you in the flow.
----
 
 ---
 
