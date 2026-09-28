@@ -4,6 +4,23 @@ An interactive terminal user interface (TUI) for managing Docker containers. Bui
 
 ---
 
+## Why I Built This
+
+Standard `docker ps` output can be a inconvenient. Text wraps awkwardly across line breaks, port mappings clutter the screen, and getting a clean overview of your running containers, stacks, and services feels unnecessarily frustrating. On top of that, constantly typing repetitive terminal commands like `docker exec -it <container_id> /bin/bash` or `docker logs -f` just to perform quick daily tasks breaks your developer flow.
+
+I built **DockerPS-Interactive** as a lightweight, zero-dependency solution to eliminate that daily CLI friction.
+
+Instead of wrestling with messy terminal columns or memorizing container IDs, **DockerPS-Interactive** gives you a clean, keyboard-driven dashboard right inside your shell:
+
+* **Instant Visual Clarity** — Auto-adjusting table layout designed for maximum readability across all terminal sizes.
+* **Effortless Searching & Filtering** — Find containers, Docker Compose projects, or specific services quickly.
+* **Single-Keystroke Productivity** — Drop into interactive shells, stream live logs, or inspect container states with a single keypress—no retyping required.
+
+Whether you're debugging local microservices or managing Docker Compose stacks, it's the fast, keyboard-first `docker ps` alternative built to keep you in the flow.
+---
+
+---
+
 ## Features
 
 * 🔍 **Interactive Search & Filtering**: Filter containers by status, Docker Compose project, or service name.
@@ -11,6 +28,7 @@ An interactive terminal user interface (TUI) for managing Docker containers. Bui
 * 📋 **Container Details**: View image details, networks, published ports, mounts, command entrypoints, and environment variables.
 * 🔐 **Automatic Secret Masking**: Environment variables containing sensitive keywords (`PASSWORD`, `SECRET`, `KEY`, etc.) are automatically masked.
 * 📜 **Logs & Execution**: View or follow logs, run interactive `/bin/bash` or `/bin/sh` shells, inspect raw JSON, and stop or restart containers directly.
+* ⚡ **CLI Startup Flags**: Launch directly into pre-filtered or pre-sorted views using CLI flags (`--search`, `--status`, `--project`, `--service`, `--sort`, `--desc`/`--asc`) to jump straight to what you need without extra navigation.
 
 ---
 
